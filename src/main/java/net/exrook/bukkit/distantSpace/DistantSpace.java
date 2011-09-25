@@ -24,9 +24,9 @@ public class DistantSpace extends JavaPlugin {
 	PluginManager pm;
 	public void onEnable () {
 		pm = this.getServer().getPluginManager();
-		pm.registerEvent(Event.Type.PLAYER_MOVE, playerListener, Event.Priority.Monitor, this)
-        PluginDescriptionFile desc = this.getDescription();
-        log.info(desc.getName() + " version " + desc.getVersion() + " is enabled!" );
+		pm.registerEvent(Event.Type.PLAYER_MOVE, playerListener, Event.Priority.Monitor, this);
+		PluginDescriptionFile desc = this.getDescription();
+		log.info(desc.getName() + " version " + desc.getVersion() + " is enabled!" );
 	}
 	public void onDisable () {
 		
