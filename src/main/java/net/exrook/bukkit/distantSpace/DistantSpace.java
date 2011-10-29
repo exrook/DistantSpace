@@ -33,7 +33,8 @@ public class DistantSpace extends JavaPlugin {
 	}
 	
 	public ChunkGenerator getDefaultWorldGenerator(String worldName, String id) {
-		switch (GeneratorID.valueOf(id.toLowerCase())) {
+		// Broken
+		/*switch (GeneratorID.valueOf(id.toLowerCase())) {
 		case space :
 			return new SpaceChunkGenerator();
 		case test :
@@ -41,5 +42,7 @@ public class DistantSpace extends JavaPlugin {
 		default:
 			return null;
 		}
+		*/
+		return new SpaceChunkGenerator();
 	}
 }
